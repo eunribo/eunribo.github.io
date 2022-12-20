@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+    }
+      .clear {
+        clear: both;
+      }
+      header {
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #title {
+        position: relative;
+        float: left;
+      }
+      #title span {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate 3.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+      }
+      @keyframes animate
+      {
+        0%
+        {
+          transform: translateY(0px);
+        }
+        20%
+        {
+          transform: translateY(-20px);
+        }
+        40%,100%
+        {
+          transform: translateY(0px);
+        }
+      }
+      #main_menu {
+        position: relative;
+        float: right;
+      }
+      #main_menu ul {
+        position: relative;
+        font-weight: 900;
+        float: right;
+        color: black;
+        margin-top: 35px;
+      }
+      #main_menu ul li {
+        list-style: none;
+        font-size: 13px;
+        font-weight: 900;
+        display: inline;
+        color: black;
+      }
+      #main_menu ul li a {
+        display: inline;
+        text-decoration: underline border 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px;
+        transition: 0.2s;
+      }
+      #main_menu ul li a:hover{
+        color: orange;
+        display: inline;
+      }
+      section {
+        width: 90%;
+        height: 650px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+        text-align: center;
+        align-items: center;
+      }
+      h3 {
+        display: inline;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+      }
+      #main_contents ul {
+        position: relative;
+        letter-spacing: 20px;
+      }
+      #main_contents ul li {
+        list-style: none;
+        text-align: center;
+        display: inline;
+      }
+      #main_contents ul li a {
+        display: inline;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        -webkit-text-stroke: 2px black;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+        transition: 0.2s;
+      }
+      #main_contents ul li a:hover{
+        color: orange;
+        -webkit-text-stroke: 2px orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div id='title'>
+        <span style='--i:1;'>t</span>
+        <span style='--i:2;'>o</span>
+        <span style='--i:3;'>d</span>
+        <span style='--i:4;'>o</span>
+        &nbsp;
+        <span style='--i:5;'>l</span>
+        <span style='--i:6;'>i</span>
+        <span style='--i:7;'>s</span>
+        <span style='--i:8;'>t</span>
+        &nbsp;
+        <span style='--i:9;'>f</span>
+        <span style='--i:10;'>o</span>
+        <span style='--i:11;'>r</span>
+        &nbsp;
+        <span style='--i:12;'>y</span>
+        <span style='--i:13;'>o</span>
+        <span style='--i:14;'>u</span>
+    </div>
+
+    <div id='main_menu'>
+      <ul>
+        <li><a href='homealone.html'>HOME ALONE</a></li>
+        <li><a href='exhibition1.html'>EXHIBITION</a></li>
+        <li><a href='restaurant.html'>RESTAURANT</a></li>
+        <li><a href='cafe.html'>CAFE</a></li>
+        <li><a href='outofseoul.html'>OUT OF SEOUL</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <section id='main_contents'>
+      <ul>
+        <li><a href="#">what</a></li>
+        <li><h3>should</h3></li>
+        <li><h3>I</h3></li>
+        <li><h3>do?</h3></li>
+      </ul>
+      <ul>
+        <li><h3>what</h3></li>
+        <li><a href="#">should</a></li>
+        <li><h3>I</h3></li>
+        <li><h3>do?</h3></li>
+      </ul>
+      <ul>
+        <li><h3>what</h3></li>
+        <li><h3>should</h3></li>
+        <li><a href="#">I</a></li>
+        <li><h3>do?</h3></li>
+      </ul>
+      <ul>
+        <li><h3>what</h3></li>
+        <li><h3>should</h3></li>
+        <li><h3>I</h3></li>
+        <li><a href="#">do?</a></li>
+      </ul>
+    </section>
+  </body>
+</html>

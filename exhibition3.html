@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+    }
+      .clear {
+        clear: both;
+      }
+      header {
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #title {
+        position: relative;
+        float: left;
+        text-decoration-line : none;
+      }
+      #title span {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate 3.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+        color: black;
+      }
+      #title span a {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate 3.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+      }
+      @keyframes animate
+      {
+        0%
+        {
+          transform: translateY(0px);
+        }
+        20%
+        {
+          transform: translateY(-20px);
+        }
+        40%,100%
+        {
+          transform: translateY(0px);
+        }
+      }
+      #main_menu {
+        position: relative;
+        float: right;
+      }
+      #main_menu ul {
+        position: relative;
+        font-weight: 900;
+        float: right;
+        color: black;
+        margin-top: 35px;
+      }
+      #main_menu ul li {
+        list-style: none;
+        font-size: 13px;
+        font-weight: 900;
+        display: inline;
+        color: black;
+      }
+      #main_menu ul li a {
+        display: inline;
+        text-decoration: underline border 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px;
+        transition: 0.2s;
+      }
+      #main_menu ul li a:hover{
+        color: orange;
+        display: inline;
+      }
+      section {
+        width: 90%;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+        text-align: center;
+      }
+      #main_text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+        background-color: orange;
+      }
+      #main_text h3 {
+        display: inline;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+      }
+      #contents {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu {
+        float: left;
+        width: 234px;
+        margin-top: 20px;
+        /*border: solid 1px red;*/
+        list-style-type: none;
+        text-align: left;
+      }
+      #sub_menu h3 {
+        font-size: 20px;
+        color: #f29e25;
+        text-align: left;
+        margin-left: 15px;
+        text-transform: uppercase;
+      }
+      #sub_menu ul {
+        vertical-align: middle;
+        float: right;
+        padding: 3px;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        margin-top: 15px;
+      }
+      #sub_menu ul li {
+        vertical-align: middle;
+        float: right;
+        padding: 3px;
+        border-bottom: solid 2px orange;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        margin-top: 5px;
+      }
+      #sub_menu ul li a {
+        align-items: center;
+        float: right;
+        font-size: 15px;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+      #sub_menu ul li a:hover {
+        color: orange;
+      }
+      #main_contents {
+        width: 1200px;
+        float: right;
+        /*border: solid 1px red;*/
+      }
+      #main_contents h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        margin-top: 50px;
+        float: left;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      #main_contents ul {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        margin-top: 50px;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+      }
+      #main_contents ul li {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        display: inline;
+        margin-top: 20px;
+      }
+      #main_contents table {
+        width: 800px;
+        clear: both;
+        float: left;
+        margin-top: 10px;
+        /*border: solid 1px red;*/
+      }
+      #main_contents tr {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        margin-top: 50px;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        border-bottom: solid 1px black;
+      }
+      #main_contents tr td {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        border-bottom: solid 1px black;
+      }
+      #main_contents h2 {
+        font-size: 17px;
+        font-weight: 500;
+        color: black;
+        margin-top: 50px;
+        padding-top: 50px;
+        clear: both;
+        text-align: left;
+        align-items: center;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id='title'><a id='title' href="index.html">
+        <span style='--i:1;'>t</span>
+        <span style='--i:2;'>o</span>
+        <span style='--i:3;'>d</span>
+        <span style='--i:4;'>o</span>
+        &nbsp;
+        <span style='--i:5;'>l</span>
+        <span style='--i:6;'>i</span>
+        <span style='--i:7;'>s</span>
+        <span style='--i:8;'>t</span>
+        &nbsp;
+        <span style='--i:9;'>f</span>
+        <span style='--i:10;'>o</span>
+        <span style='--i:11;'>r</span>
+        &nbsp;
+        <span style='--i:12;'>y</span>
+        <span style='--i:13;'>o</span>
+        <span style='--i:14;'>u</span>
+      </a>
+    </div>
+
+    <div id='main_menu'>
+      <ul>
+        <li><a href='homealone.html'>HOME ALONE</a></li>
+        <li><a href='exhibition1.html'>EXHIBITION</a></li>
+        <li><a href='restaurant.html'>RESTAURANT</a></li>
+        <li><a href='cafe.html'>CAFE</a></li>
+        <li><a href='outofseoul.html'>OUT OF SEOUL</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <section id='main_text'>
+      <h3>exhibition in seoul</h3>
+    </section>
+
+    <section id='contents'>
+      <nav id='sub_menu'>
+        <h3>how about..</h3>
+        <ul>
+          <li><a href='exhibition1.html'>&nbsp; 알버트왓슨 사진전</a></li>
+          <li><a href='exhibition2.html'>&nbsp; 빈센트발 전시회</a></li>
+          <li><a href='exhibition3.html'>&nbsp; 맥스 달튼 전시회 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▶</a></li>
+        </ul>
+      </nav>
+
+      <div id='main_contents'>
+        <h3>아쿠아플라넷63 MAX DALTON</h3>
+        <table>
+         <tr>
+           <td>기간</td>
+           <td>2022.12.09(금) ~ 2023.01.15(일)</tr>
+          </tr>
+          <tr>
+           <td>시간</td>
+           <td>10:00 ~ 19:00</td>
+          </tr>
+          <tr>
+           <td>장소</td>
+           <td>아쿠아플라넷63, 63아트 (서울특별시 영등포구 여의도동 60)</td>
+         </tr>
+         <tr>
+           <td>입장 연령</td>
+           <td>전체관람</td>
+         </tr>
+         <tr>
+           <td>전시입장마감시간</td>
+           <td>18:30</td>
+         </tr>
+         <tr>
+           <td>가격</td>
+           <td>성인(만 19-64세) 15,000원/청소년,어린이(만 3-18세) 12,000원/36개월 미만 무료</td>
+         </tr>
+         <tr>
+           <td>주최</td>
+           <td>63아트, 마이아트뮤지엄</td>
+         </tr>
+         <tr>
+           <td>주관</td>
+           <td>63아트, 마이아트뮤지엄</td>
+         </tr>
+       </table>
+
+       <h2>맥스 달튼은 일러스트레이터이자 화가이며, 이따금 뮤지션이나 작가로 활동하기도 한다.
+        <br>그는 [프렌치 디스패치],[그랜드 부다페스트 호텔], [벨라몬테] 등등
+        웨스 앤더슨 컬렉션 북의 일러스트로 많이 알려져있다. </h2>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+    }
+      .clear {
+        clear: both;
+      }
+      header {
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #title {
+        position: relative;
+        float: left;
+        text-decoration-line : none;
+      }
+      #title span {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate 3.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+        color: black;
+      }
+      #title span a {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate 3.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+      }
+      @keyframes animate
+      {
+        0%
+        {
+          transform: translateY(0px);
+        }
+        20%
+        {
+          transform: translateY(-20px);
+        }
+        40%,100%
+        {
+          transform: translateY(0px);
+        }
+      }
+      #main_menu {
+        position: relative;
+        float: right;
+      }
+      #main_menu ul {
+        position: relative;
+        font-weight: 900;
+        float: right;
+        color: black;
+        margin-top: 35px;
+      }
+      #main_menu ul li {
+        list-style: none;
+        font-size: 13px;
+        font-weight: 900;
+        display: inline;
+        color: black;
+      }
+      #main_menu ul li a {
+        display: inline;
+        text-decoration: underline border 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px;
+        transition: 0.2s;
+      }
+      #main_menu ul li a:hover{
+        color: orange;
+        display: inline;
+      }
+      section {
+        width: 90%;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+        text-align: center;
+      }
+      #main_text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+        background-color: orange;
+      }
+      #main_text h3 {
+        display: inline;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        font-size: 140px;
+        letter-spacing: 1px;
+      }
+      #contents {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu {
+        float: left;
+        width: 234px;
+        margin-top: 20px;
+        /*border: solid 1px red;*/
+        list-style-type: none;
+        text-align: left;
+      }
+      #sub_menu h3 {
+        font-size: 20px;
+        color: #f29e25;
+        text-align: left;
+        margin-left: 15px;
+        text-transform: uppercase;
+      }
+      #sub_menu ul {
+        vertical-align: middle;
+        float: right;
+        padding: 3px;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        margin-top: 15px;
+      }
+      #sub_menu ul li {
+        vertical-align: middle;
+        float: right;
+        padding: 3px;
+        border-bottom: solid 2px orange;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        margin-top: 5px;
+      }
+      #sub_menu ul li a {
+        align-items: center;
+        float: right;
+        font-size: 15px;
+        width: 200px;
+        list-style-type: none;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+      #sub_menu ul li a:hover {
+        color: orange;
+      }
+      #main_contents {
+        width: 1200px;
+        float: right;
+        /*border: solid 1px red;*/
+      }
+      #main_contents h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        margin-top: 50px;
+        float: left;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      #main_contents ul {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        margin-top: 30px;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+      }
+      #main_contents ul li {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        display: inline;
+        margin-top: 20px;
+      }
+      #main_contents table {
+        width: 800px;
+        clear: both;
+        float: left;
+        margin-top: 10px;
+        /*border: solid 1px red;*/
+      }
+      #main_contents tr {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        margin-top: 50px;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        border-bottom: solid 1px black;
+      }
+      #main_contents tr td {
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        list-style-type: none;
+        clear: both;
+        padding: 10px;
+        text-align: left;
+        border-bottom: solid 1px black;
+      }
+      #main_contents h2 {
+        font-size: 15px;
+        font-weight: 700;
+        color: black;
+        margin-top: 30px;
+        clear: both;
+        text-align: left;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id='title'><a id='title' href="index.html">
+        <span style='--i:1;'>t</span>
+        <span style='--i:2;'>o</span>
+        <span style='--i:3;'>d</span>
+        <span style='--i:4;'>o</span>
+        &nbsp;
+        <span style='--i:5;'>l</span>
+        <span style='--i:6;'>i</span>
+        <span style='--i:7;'>s</span>
+        <span style='--i:8;'>t</span>
+        &nbsp;
+        <span style='--i:9;'>f</span>
+        <span style='--i:10;'>o</span>
+        <span style='--i:11;'>r</span>
+        &nbsp;
+        <span style='--i:12;'>y</span>
+        <span style='--i:13;'>o</span>
+        <span style='--i:14;'>u</span>
+      </a>
+    </div>
+
+    <div id='main_menu'>
+      <ul>
+        <li><a href='homealone.html'>HOME ALONE</a></li>
+        <li><a href='exhibition1.html'>EXHIBITION</a></li>
+        <li><a href='restaurant.html'>RESTAURANT</a></li>
+        <li><a href='cafe.html'>CAFE</a></li>
+        <li><a href='outofseoul.html'>OUT OF SEOUL</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <section id='main_text'>
+      <h3>cafe</h3>
+    </section>
+
+    <section id='contents'>
+      <nav id='sub_menu'>
+        <h3>how about..</h3>
+        <ul>
+          <li><a href='cafe.html'>&nbsp; 망원동</a></li>
+          <li><a href='yeonnamcafe.html'>&nbsp; 연남동</a></li>
+          <li><a href='sungsucafe.html'>&nbsp; 성수동
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▶</a></li>
+        </ul>
+      </nav>
+
+      <div id='main_contents'>
+        <h3>우디집</h3>
+        <h2>서울 마포구 성미산서울 성동구 둘레9길 17 2층 우디집 카페</h2>
+        <ul>
+          <li><img src='img/cafe17.jpg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe18.jpeg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe19.jpg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe20.jpeg' width='250px;' height='250px'></li>
+        </ul>
+        <h2>성수동에 있는 허름했던 독채를 리모델링한 분위기 있는 카페</h2>
+
+        <h3>피죤그램 성수</h3>
+        <h2>서울 성동구 연무장길 5 1층 pigeongram</h2>
+        <ul>
+          <li><img src='img/cafe21.jpeg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe22.jpg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe23.jpeg' width='250px;' height='250px'></li>
+          <li><img src='img/cafe24.jpeg' width='250px;' height='250px'></li>
+        </ul>
+        <h2>비둘기를 캐릭터로 삼아 독특한 인테리어를 가지고 있는 스텐딩 카페</h2>
+      </div>
+    </section>
+  </body>
+</html>
